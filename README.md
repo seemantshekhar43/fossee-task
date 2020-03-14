@@ -17,7 +17,8 @@ csvWeb is a Java web application built for the JSP community that has two primar
 - JAVA Servlet
 - JSP
 - MYSQL
-- HTML/CSS
+- JQUERY
+
 
 ## How to Run csvWeb
 
@@ -40,6 +41,96 @@ csvWeb is a Java web application built for the JSP community that has two primar
 5. Build the project and Run on Tomcat server.
 
 6. I have included a demo csv file for testing named "demoData.csv".
+
+
+# Task-2
+
+## Problem Statement
+Create a Traveller blog application. An example format of the webpage has been shown below:
+
+![Alt text](relative/path/to/img.jpg?raw=true "Title")
+
+Do the following validations on the page:
+1. Date: Form should not accept date greater than the current date.
+
+2. Image: The image file must be JPEG/JPG/PNG format only and the size of the file should not exceed 5 MB.
+
+3. Allow only 100 characters for the Name field.
+
+- Display all blogs in descending order (based on the date of creation) in a page.
+
+- Give all users View/Edit/Delete option for each blog. 
+
+- Note: The image should be stored in a directory and the relative path of the image should be stored in the database.
+
+- Technology: Spring boot, Hibernate, Mysql, Thymeleaf, BootStrap, CSS.
+
+## Overview
+Traveller's Blog is a Java web application built for the Spring community. This is blogging site having basic blogger features for travellers. 
+
+## Features
+- Create Account
+- Login/Logout
+- Add new Post (Can add image to the post too.)
+- Display Post
+- Edit Post
+- Delete Post
+
+## Technology tools/components used
+- JAVA 
+- Spring MVC
+- Spring Boot
+- JPA
+- Hibernate
+- Thymeleaf
+- JQUERY
+- Bootstrap
+- MYSQL
+
+## How to run Traveller's Blog
+
+1. Clone the repository from GitHub:
+
+		$ git clone git://github.com/seemantshekhar43/fossee-task.git
+    
+2. Open project in IntelliJ/Eclipse.
+
+3. Make the following changes in application.properties:
+  
+      - Replace YOUR_DB_NAME with name of your database
+      - Replace USERNAME with username of MYSQL database
+      - Replace PASSWORD with passowrd of MYSQL database
+      
+      NOTE: Change the values for "spring.jpa.hibernate.ddl-auto"  
+      
+      1. If you are running for the first time.
+      ```java
+       spring.jpa.hibernate.ddl-auto = create 
+      ```
+      2. If you are running for the 2nd time or else.
+      ```java
+       spring.jpa.hibernate.ddl-auto = update
+      ```
+      
+ 6. Make the following changes in PostService.java
+ 
+    - Update the absolute path of "media" in your pc.
+    ```java
+       final static String POST_IMAGE_PATH = "absolute_path_of_media_folder";
+    ```
+    
+    - Example: if you have cloned fossee-task on your desktop, then the absolute path will be:
+      "/home/seemant/Desktop/fossee-task/task-2/tblog/media/";
+ 
+ 4. Build the project and run on Tomcat server.
+ 
+ 5. Create an account using Register tab.
+ 
+ 6. To add new post you need to be logged in. So register first.
+ 
+ 7. One can view/edit/delete without logging in.
+        
+
 
     
     
