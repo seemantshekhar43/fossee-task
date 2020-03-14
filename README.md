@@ -120,7 +120,7 @@ Traveller's Blog is a Java web application built for the Spring community. This 
     ```
     
     - Example: if you have cloned fossee-task on your desktop, then the absolute path will be:
-      "/home/seemant/Desktop/fossee-task/task-2/tblog/media/";
+      "/home/pc_name/Desktop/fossee-task/task-2/tblog/media/";
  
  4. Build the project and run on Tomcat server.
  
