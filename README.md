@@ -152,13 +152,21 @@ Traveller's Blog is a Java web application built for the Spring community. This 
     - Example: if you have cloned fossee-task on your desktop, then the absolute path will be:
       "/home/pc_name/Desktop/fossee-task/task-2/tblog/media/";
  
- 4. Build the project and run on Tomcat server.
+ 4. Build the project and run on Tomcat server (just run and do nothing ).
  
- 5. Create an account using Register tab.
+ 5. Now make the following changes in application.properties (change the value to update)
  
- 6. To add new post you need to be logged in. So register first.
+ 	 ```java
+       spring.jpa.hibernate.ddl-auto = update
+      ```
  
- 7. One can view/edit/delete without logging in.
+ 6. Build and Re-run the porject. 
+ 
+ 7. Create an account using Register tab.
+ 
+ 8. To add new post you need to be logged in. So register first.
+ 
+ 9. One can view/edit/delete without logging in.
         
 
 
