@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('input[type=file]').change(function () {
+        //console.log(this.files);
         var f = this.files;
         var el = $(this).parent();
         if (f.length > 1) {
