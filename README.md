@@ -36,10 +36,10 @@ csvWeb is a Java web application built for the JSP community that has two primar
   
       - Replace YOUR_DB_NAME with name of your database
       - Replace USERNAME with username of MYSQL database
-      - Replace PASSWORD with passowrd of MYSQL database
+      - Replace PASSWORD with password of MYSQL database
       
       
-     	In upload_page.jsp
+     In upload_page.jsp
       
       ```java
        Class.forName("com.mysql.jdbc.Driver");
@@ -120,7 +120,16 @@ Traveller's Blog is a Java web application built for the Spring community. This 
   
       - Replace YOUR_DB_NAME with name of your database
       - Replace USERNAME with username of MYSQL database
-      - Replace PASSWORD with passowrd of MYSQL database
+      - Replace PASSWORD with password of MYSQL database
+      
+      application.properties
+      
+      ```java
+    spring.datasource.driver-class-name = com.mysql.cj.jdbc.Driver
+    spring.datasource.url = jdbc:mysql://localhost:3306/YOUR_DB_NAME?characterEncoding=utf8
+    spring.datasource.username = USERNAME
+    spring.datasource.password = PASSWORD
+      ```
       
       NOTE: Change the values for "spring.jpa.hibernate.ddl-auto"  
       
