@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="/img/favicon.ico"/>
+    <script src="/js/jquery-3.1.0.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <title>Edit Post</title>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light">
+        <a class="navbar-brand" href="">
+            Traveller's Blog
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                <li class="nav-item" th:classappend="${module == 'home' ? 'active' : ''}">
+                    <a class="nav-link" href="#" th:href="@{/posts}">Blog</a>
+                </li>
+                <li class="nav-item" th:classappend="${module == 'tasks' ? 'active' : ''}">
+                    <a class="nav-link" href="#" th:href="@{/new}">Add New</a>
+                </li>
+                <li class="nav-item" th:classappend="${module == 'tasks' ? 'active' : ''}">
+                    <a class="nav-link" href="#" th:href="@{/login}">Login</a>
+                </li>
+                <li class="nav-item" th:classappend="${module == 'tasks-ld' ? 'active' : ''}">
+                    <a class="nav-link" href="#" th:href="@{/register}">Register</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container pt-5">
+        <h2 class="text-center primary-color font-weight-bolder">Edit Post</h2>
+    </div>
+
+    <div class="container shadow p-4 mb-4 bg-white text-left">
+        <div id="alert_msg" th:if="${error_text}" th:text="${error_text}"> You Have Registered Successfully.</div>
+        <form th:action="@{'/edit/' + ${post.id}}" th:object="${post}" method="post" enctype="multipart/form-data">
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" th:field="*{name}" placeholder="Enter name"
+                           name="name" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="date">Date:</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="date" th:field="*{date}" placeholder="Enter password"
+                           name="date" required>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="exampleFormControlTextarea1">Description</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" th:field="*{description}" rows="3"
+                              required></textarea>
+                </div>
+            </div>
+
+
+            <!-- Button -->
+            <div style="margin-top:10px" class="form-group">
+                <!-- Button -->
+
+                <div class="col-sm-12 controls">
+                    <button id="btn-signup create" type="submit" class="btn btn-info"><i class="icon-hand-right"></i>Submit
+                    </button>
+                    <button id="btn-fbsignup" type="reset" class="btn btn-primary"><i class="icon-facebook"></i>Reset
+                    </button>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+</main>
+<footer>
+    <div class="footer footer-bottom">
+        <!-- Copyright -->
+        <div class="container-fluid footer-copyright">
+            <div class=" text-center py-3">© 2020 Copyright:
+                <a href="https://fossee.in/fellowship/2020"> FOSSEE</a>
+            </div>
+        </div>
+        <!-- Copyright -->
+    </div>
+</footer>
+</body>
+
+</html>
