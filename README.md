@@ -37,6 +37,27 @@ csvWeb is a Java web application built for the JSP community that has two primar
       - Replace YOUR_DB_NAME with name of your database
       - Replace USERNAME with username of MYSQL database
       - Replace PASSWORD with passowrd of MYSQL database
+      
+      
+     	In upload_page.jsp
+      
+      ```java
+       Class.forName("com.mysql.jdbc.Driver");
+       String connectionURL = "jdbc:mysql://localhost:3306/YOUR_DB_NAME";
+       con = DriverManager.getConnection
+                 connectionURL, "USERNAME", "PASSWORD");
+      ```  
+      
+      In display.jsp
+      
+      ```java
+    String driverName = "com.mysql.jdbc.Driver";
+    String connectionUrl = "jdbc:mysql://localhost:3306/";
+    String dbName = "YOUR_DB_NAME";
+    String userId = "USERNAME";
+    String password = "PASSWORD";
+      ```  
+      
 
 5. Build the project and Run on Tomcat server.
 
