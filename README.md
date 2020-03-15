@@ -162,11 +162,15 @@ Traveller's Blog is a Java web application built for the Spring community. This 
  
  6. Build and Re-run the porject. 
  
- 7. Create an account using Register tab.
+ 7. You can view your blog at:  http://localhost:8080/
  
  8. To add new post you need to be logged in. So register first.
  
- 9. One can view/edit/delete without logging in.
+ 9. Create an account using Register tab.
+ 
+ 10. One can view/edit/delete without logging in.
+ 
+ 11. Happy Blogging!!
         
 
 
