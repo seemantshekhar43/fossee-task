@@ -144,7 +144,7 @@ Traveller's Blog is a Java web application built for the Spring community. This 
       
  6. Make the following changes in PostService.java
  
-    - Update the absolute path of "media" in your pc.
+    - Update the absolute path of "media" in accordance with where you cloned the project.
     ```java
        final static String POST_IMAGE_PATH = "absolute_path_of_media_folder";
     ```
