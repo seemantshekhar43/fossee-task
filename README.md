@@ -69,7 +69,7 @@ csvWeb is a Java web application built for the JSP community that has two primar
 ## Problem Statement
 Create a Traveller blog application. An example format of the webpage has been shown below:
 
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Blog problem statement](task2/tblog/media/demo.png?raw=true)
 
 Do the following validations on the page:
 1. Date: Form should not accept date greater than the current date.
