@@ -26,11 +26,11 @@ csvWeb is a Java web application built for the JSP community that has two primar
 
 		$ git clone https://github.com/seemantshekhar43/fossee-task.git
 
-2. Create table to store data:
+2. Create table in your database to store data :
 
 		mysql> create table data(name  text null, email text null, phone text null);
     
-3. Open downloaded project in IntelliJ/ Eclipse.
+3. Open downloaded project(task1/csvWeb) in IntelliJ/ Eclipse.
 
 4. Make the following changes in upload_page.jsp and display.jsp:
   
@@ -114,7 +114,7 @@ Traveller's Blog is a Java web application built for the Spring community. This 
 
 		$ git clone https://github.com/seemantshekhar43/fossee-task.git
     
-2. Open project in IntelliJ/Eclipse.
+2. Open project (task2/tblog) in IntelliJ/Eclipse.
 
 3. Make the following changes in application.properties:
   
