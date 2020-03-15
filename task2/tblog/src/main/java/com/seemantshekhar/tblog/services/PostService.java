@@ -26,7 +26,7 @@ public class PostService {
      * Example: if you have cloned fossee-task on your desktop, then the absolute path will be:
      * "/home/pc_name/Desktop/fossee-task/task-2/tblog/media/";
      */
-    final static String POST_IMAGE_PATH = "/home/seemant/fossee_test/fossee-task/task2/tblog";
+    final static String POST_IMAGE_PATH = "absolute_path_of_media_folder";
     final static String RELATIVE_PATH = "/media/"; // No need to change this path
 
     @Autowired
