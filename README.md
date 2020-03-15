@@ -24,7 +24,7 @@ csvWeb is a Java web application built for the JSP community that has two primar
 
 1. Clone the repository from GitHub:
 
-		$ git clone git://github.com/seemantshekhar43/fossee-task.git
+		$ git clone https://github.com/seemantshekhar43/fossee-task.git
 
 2. Create table to store data:
 
@@ -112,7 +112,7 @@ Traveller's Blog is a Java web application built for the Spring community. This 
 
 1. Clone the repository from GitHub:
 
-		$ git clone git://github.com/seemantshekhar43/fossee-task.git
+		$ git clone https://github.com/seemantshekhar43/fossee-task.git
     
 2. Open project in IntelliJ/Eclipse.
 
