@@ -61,7 +61,9 @@ csvWeb is a Java web application built for the JSP community that has two primar
 
 5. Build the project and Run on Tomcat server.
 
-6. I have included a demo csv file for testing named "demoData.csv".
+6. If you have opened the project in IntelliJ then you can view the app at: http://localhost:8080/csvWeb_war_exploded/
+
+7. I have included a demo csv file for testing named "demoData.csv".
 
 
 # Task-2
