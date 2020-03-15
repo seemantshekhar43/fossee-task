@@ -59,7 +59,7 @@ public class IndexController {
     @RequestMapping("/new")
     public String showNewPostForm(Model model){
         Post post = new Post();
-        System.out.println("create new called");
+
         model.addAttribute("post", post);
 
         return "new_post";
@@ -80,7 +80,7 @@ public class IndexController {
         if(bindingResult.hasErrors()) {
             return "/new_post";
         }
-        System.out.println("save new called");
+
         post.setAuthor(userService.getAuthenticatedUser().getUsername());
 
         //Checking length of post title
@@ -182,7 +182,7 @@ public class IndexController {
         ModelAndView mav = new ModelAndView("edit_post");
         Post post = service.get(id);
         mav.addObject("post", post);
-        System.out.println(post.getId());
+
         return mav;
     }
 
@@ -206,7 +206,7 @@ public class IndexController {
         post_final.setDescription(post.getDescription());
         post_final.setName(post.getName());
         post_final.setDate(post.getDate());
-        post_final.setAuthor("seemant");
+        
 
         if(post.getName().length() > 100){
             model.addAttribute("error_text", "Max Size of name is 100 characters.");
@@ -216,7 +216,7 @@ public class IndexController {
             return "/edit_post";
         }
         service.save(post_final);
-        System.out.println("new" + post_final.getId());
+
         return "redirect:/posts/";
 
     }
